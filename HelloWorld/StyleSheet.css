@@ -1,0 +1,25 @@
+body {
+  background-image: url(SAO3.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  color: darkred;
+  margin-bottom:.5 in;
+  text-decoration: underline;
+}
+P {
+  text-align: center;
+  font-size: large;
+  color: beige;
+}
+input {
+  background-color:darkblue;
+  text-align: center;
+  font-size: large;
+  color: beige;
+  border-color: chartreuse;
+  border-radius: 10px;
+}
