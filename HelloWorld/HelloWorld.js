@@ -122,3 +122,55 @@ while(j2 < 13) {
     y2 = y2 + 30
     j2++
 }
+
+//Optical Illusion
+let canvas3 = document.getElementById("canvas3");
+let painter3 = canvas3.getContext("2d");
+//Background
+painter3.fillStyle = "#9999ff";
+painter3.fillRect(0, 0, 400, 400);
+//Pattern
+//Checkered 1
+painter3.fillStyle = "#000099";
+let w3 = 10
+let h3 = 10
+let y3 = 0
+    for(let j = 0; j < 40; j++) {
+        let x3 = 0
+        for(let i = 0; i < 40; i++) {  
+            if((i+j)%2 === 0) {
+            painter3.fillRect(x3, y3, w3, h3);
+            }
+            x3 = x3 + 10
+        }
+        y3 = y3 + 10
+    }    
+
+//Small Checkered 
+let w4 = 4
+let h4 = 4
+let y4 = 8
+let j3 = 0
+while(j3 < 39) {
+    let x4 = 7.5
+    let i3 = 0
+    while(i3 <39){
+        if(j3 >= 12 && j3 <= 26 && i3 >= 12 && i3 <= 26 && (i3+j3)%2 === 1) {
+          painter3.fillStyle = "#000033";
+          painter3.fillRect(x4, y4, w4, h4);
+          } else if(j3 >= 12 && j3 <= 26 && i3 >= 12 && i3 <= 26 && (i3+j3)%2 === 0) {
+            painter3.fillStyle = "#e6e6ff";
+            painter3.fillRect(x4, y4, w4, h4);  
+            } else if ((i3+j3)%2 === 0){
+                painter3.fillStyle = "#000033";
+                painter3.fillRect(x4, y4, w4, h4);
+            } else if ((i3+j3)%2 === 1){
+                painter3.fillStyle = "#e6e6ff";
+                painter3.fillRect(x4, y4, w4, h4); 
+            }
+          x4 = x4 + 10
+          i3++
+      }
+      y4 = y4 + 10
+      j3++
+    }
