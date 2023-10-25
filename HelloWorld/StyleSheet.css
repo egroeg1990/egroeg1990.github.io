@@ -2,7 +2,7 @@ Body {
   background-image: url(DemonSlayer4.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 h1 {
   text-align: left;
