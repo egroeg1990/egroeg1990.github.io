@@ -3,7 +3,7 @@ Body {
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 110%;
+  background-size: cover;
 }
 h1 {
   text-align: left;
